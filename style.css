@@ -1,0 +1,105 @@
+/* order of css tags? 
+
+- last one wins.
+@import up top
+normal html tags
+classes 
+ids 
+
+*/ 
+
+ #classroom {
+            height: 800px;
+            width: 800px;
+            background-color: #CCC;
+            margin: auto;
+            position: relative;
+        }
+
+        /* Podium */
+        #podium {
+            height: 100px;
+            width: 150px;
+            border: solid 2px black;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: rotate(-30deg);
+            text-align: center;
+            color: white;
+            line-height: 100px;
+        }
+
+        /* Circle Table */
+        .circle-table {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background-color: #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            cursor: move;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Individual seats in the table */
+        .seat {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: purple;
+            border-radius: 50%;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            font-weight: bold;
+        }
+
+        /* Specific positions for seats around the table */
+        .seat1 { top: 10px; left: 110px; }
+        .seat2 { top: 10px; right: 110px; }
+        .seat3 { bottom: 10px; left: 110px; }
+        .seat4 { bottom: 10px; right: 110px; }
+         transform: translateX(-50%); }
+
+        /* Fixed position elements */
+        #fxt {
+            height: 5%;
+            width: 5%;
+            border: dotted 3px green;
+            position: fixed;
+            bottom: 5px;
+            right: 5px;
+        }
+
+        #banner {
+            height: 75px;
+            width: 80%;
+            margin: auto;
+            border: dotted 3px green;
+            position: fixed;
+            top: 30px;
+            left: 0;
+            right: 0;
+            
+        }
+
+        #chatBox {
+            height: 50px;
+            width: 30px;
+            border: dashed 2px red;
+            position: fixed;
+            top: 10%;
+            right: 0px;
+        }
+
+        /* Button styling */
+        .btn-warning {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
